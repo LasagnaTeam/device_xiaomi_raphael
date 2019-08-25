@@ -6,18 +6,17 @@
 
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common BeastROMs stuff.
-$(call inherit-product, vendor/beast/config/common.mk)
+# Inherit some common AEX stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := beast_raphael
+PRODUCT_NAME := aosp_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi K20 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
-BEAST_BUILD_TYPE := OFFICIAL
 
 BUILD_FINGERPRINT := "Xiaomi/davinci_eea/davinci:9/PKQ1.190302.001/V10.3.7.0.PFJEUXM:user/release-keys"
 
